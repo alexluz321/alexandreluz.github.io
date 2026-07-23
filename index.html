@@ -718,10 +718,9 @@
     /* ── Boot Sequence ───────────────────────────────────────── */
     const bootLines = [
       'BIOS v2.1.4  --  POST OK',
-      'Loading kernel ..............  OK',
+      'Loading kernel ...............  OK',
       'Mounting filesystems .........  OK',
       'Starting network services ....  OK',
-      'Checking for intruders .......  NONE FOUND',
       '',
       'Welcome to alexandreluz.dev',
       'Type "help" for available commands.',
@@ -741,7 +740,7 @@
           document.querySelectorAll('.fade-in').forEach((el, i) => {
             setTimeout(() => el.classList.add('visible'), i * 120);
           });
-        }, 300);
+        }, 150);
         return;
       }
       const line = bootLines[lineIdx];
